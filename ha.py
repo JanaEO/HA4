@@ -38,7 +38,7 @@ if page == "Dataset":
     st.write("This application shows how different factors affect insurance charges in the United States")
     #Data Import
 
-    bytes_data = pd.read_csv('/Users/janaaloud/Desktop/insurance.csv')
+    bytes_data = pd.read_csv('insurance.csv')
     with st.expander("Detailed Data View!"):
         st.markdown("### Detailed Data View")
         st.write(bytes_data)
@@ -49,7 +49,7 @@ if page == "Dataset":
 #Third Page: Visualizations
 elif page == "Visualizations":
     # Data Import
-    bytes_data = pd.read_csv('/Users/janaaloud/Desktop/insurance.csv')
+    bytes_data = pd.read_csv('insurance.csv')
 
     # create four columns
     st.markdown("#### Number of subscribers in each Region")
@@ -181,7 +181,7 @@ elif page == "Visualizations":
 #Fourth Page: KPIs
 elif page == "Regions":
     # Display details of page 2
-    bytes_data = pd.read_csv('/Users/janaaloud/Desktop/insurance.csv')
+    bytes_data = pd.read_csv('insurance.csv')
     # top-level filters
     st.markdown("#### Select the Region")
     region_filter = st.selectbox("", pd.unique(bytes_data["region"]))
