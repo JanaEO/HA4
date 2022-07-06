@@ -255,7 +255,7 @@ elif page == "Regions":
 if page == "Model":
 
 # importing model
-    loaded_model = pickle.load(open('/Users/janaaloud/Desktop/logisticmodel.pkl', 'rb'))
+    loaded_model = pickle.load(open('logisticmodel.pkl', 'rb'))
 #Page Title
     st.markdown("#### Predict your Insurance charges:")
 # Building dropdown for features sex and smoker.
