@@ -132,7 +132,7 @@ elif page == "Visualizations":
     with fig_col1:
         st.markdown("#### Charges VS Smoking")
         bd = px.data.tips()
-        fig = px.box(bytes_data,x="charges", y="smoker",color_continuous_scale='blues')
+        fig = px.box(bytes_data,x="charges", y="smoker")
         st.write(fig)
     with fig_col2:
         st.markdown("#### Charges VS BMI")
